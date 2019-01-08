@@ -1,0 +1,33 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+.wrapper{
+    height: 600px;
+    border: 1px solid gray;
+}
+
+.notDevoured {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+}
+
+.devoured {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px; 
+}
+
+#notDevouredList {
+    display: block;
+    height: 85%;
+    min-height: 85%;
+}
+
