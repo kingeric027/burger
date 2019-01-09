@@ -1,16 +1,27 @@
 <div class="container">
 
-  <div class="row">
-    <div class="col-sm-12">
+  <div class="row" id="header">
+    <div class="col-sm-2">
+      <img src="/assets/img/burger1.jpg">
+    </div>
+    <div class="col-sm-2">
+      <img src="/assets/img/burger2.jpg">
+    </div>
+    <div class="col-sm-4">
       <h1>Burgers!</h1>
-      <p></p>
+    </div>
+    <div class="col-sm-2">
+      <img src="/assets/img/burger3.jpg">
+    </div>
+    <div class="col-sm-2">
+      <img src="/assets/img/burger4.jpeg">
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-5" id="notDevoured">
 
-      <h2>Burgers that are not devoured!</h2>
+      <h2>Burgers that are not devoured</h2>
 
         <ul>
         {{#each burgers}}
@@ -24,7 +35,7 @@
       </ul>
     </div>
     
-    <div class="col-sm-6">
+    <div class="col-sm-5 col-sm-offset-2" id="devoured">
       <h2>Burgers that are devoured</h2>
       
         {{#each burgers}}
@@ -37,16 +48,16 @@
       
     </div>
   </div>
-   
+  <hr>
 <div class="row">
   <div class="col-sm-12">
-    <h2>Add a Burger</h2>
+    <h2 id="addBurger">Add a Burger</h2>
     <form class="create-form">
       <div class="form-group">
         <label for="burger">Burger Name:</label>
         <input type="text" id="burger" name="newBurger">
       </div>
-      <button type="submit">Add Burger</button>
+      <button type="submit" id="submitBtn"><strong>Add Burger</strong></button>
     </form>
    </div>
   </div>
